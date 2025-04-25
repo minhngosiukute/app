@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/txt_khachhang"
+        style="@style/LabelStyle"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="18sp"
+        android:lineSpacingExtra="8dp"
+        android:background="@drawable/textview_background"
+        android:padding="12dp"
+        android:elevation="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btn_dongy"
+            style="@style/ButtonStyle"
+            android:onClick="DongY"
+            android:text="Đồng ý"
+            android:backgroundTint="#43A047"
+
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btn_huybo"
+            style="@style/ButtonStyle"
+            android:onClick="HuyBo"
+            android:text="Hủy bỏ"
+            android:backgroundTint="#E53935"
+
+            android:layout_marginStart="8dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>

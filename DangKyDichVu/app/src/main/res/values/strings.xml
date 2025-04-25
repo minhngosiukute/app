@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DangKyDichVu</string>
+    <string-array name="class_array">
+        <item> Đặt thuê xe</item>
+        <item>Dịch vụ Internet</item>
+        <item>Thuê Oto</item>
+        <item>Tiêm vac xin</item>
+    </string-array>
+</resources>

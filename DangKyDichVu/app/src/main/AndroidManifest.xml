@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/iconchinh"
+        android:label="Đăng ký dịch vụ"
+        android:roundIcon="@mipmap/iconchinh"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight"
+        tools:targetApi="31">
+        <activity
+            android:name=".giaodien.DangNhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".giaodien.MainActivity_GridView"
+            android:exported="false" />
+
+        <activity
+            android:name=".giaodien.DichVuTiemVacXin"
+            android:exported="false"
+            android:label="Đăng ký dịch vụ tiêm vắc xin" />
+        <activity
+            android:name=".giaodien.KhieuNai"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".giaodien.DichVuInternet"
+            android:exported="false"
+            android:label="Đăng ký dịch vụ Internet" />
+        <activity
+            android:name=".giaodien.XacNhanThueXe"
+            android:exported="true"
+            android:label="Xác nhận thuê xe" />
+        <activity
+            android:name=".giaodien.DatThueXe"
+            android:exported="true"
+            android:label="Đặt thuê xe" />
+        <activity
+            android:name=".giaodien.DichVuThueOTo"
+            android:exported="true"
+            android:label="Dịch vụ cho thuê xe" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

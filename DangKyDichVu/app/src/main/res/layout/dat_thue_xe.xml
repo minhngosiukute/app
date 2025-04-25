@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_hotenkh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#1976D2"
+        android:textColorHint="#757575"
+        app:endIconTint="#1976D2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_hotenkh"
+            style="@style/TextStyle"
+            android:hint="Họ tên khách hàng"
+            android:textColor="#1976D2"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_dienthoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#1976D2"
+        android:textColorHint="#757575"
+        app:endIconTint="#1976D2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dienthoai"
+            style="@style/TextStyle"
+            android:hint="Số điện thoại"
+            android:textColor="#1976D2"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#1976D2"
+        android:textColorHint="#757575"
+        app:endIconTint="#1976D2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            style="@style/TextStyle"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#1976D2"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/grp_thanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="#E8F0FE">
+
+        <RadioButton
+            android:id="@+id/rdo_tienmat"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Tiền mặt"
+            android:buttonTint="#388E3C"
+            android:textColor="#212121"
+            android:layout_marginEnd="16dp" />
+
+        <RadioButton
+            android:id="@+id/rdo_chuyenkhoan"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Chuyển khoản"
+            android:buttonTint="#388E3C"
+            android:textColor="#212121" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_thongtin"
+        style="@style/LabelStyle"
+        android:text="Thông tin đặt thuê xe:"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#D81B60"
+        android:textStyle="bold"
+        android:background="#FFE0E8"
+        android:drawableEnd="@drawable/ic_info"
+        android:drawableTint="#D81B60" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_xacnhan"
+            style="@style/ButtonStyle"
+            android:onClick="XacNhanThueXe"
+            android:text="Xác nhận"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/btn_huybo"
+            style="@style/ButtonStyle"
+            android:onClick="HuyBo"
+            android:text="Hủy bỏ"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="2dp" />
+    </LinearLayout>
+</LinearLayout>

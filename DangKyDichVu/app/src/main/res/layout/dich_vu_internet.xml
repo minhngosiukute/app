@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4F8"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:elevation="2dp">
+
+        <TableRow
+            android:layout_marginTop="7dp"
+            android:background="#E3F2FD"
+            android:padding="8dp">
+
+            <TextView style="@style/LabelStyle"
+                android:text="Gói cước:"
+                android:textColor="#1976D2"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_goicuoc"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="#1976D2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="7dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:text="Thanh toán:"
+                android:textColor="#1976D2"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/grp_thanhtoan"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdo_tienmat"
+                    style="@style/LabelStyle"
+                    android:checked="true"
+                    android:text="Tiền mặt"
+                    android:buttonTint="#388E3C"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rdo_chuyenkhoan"
+                    style="@style/LabelStyle"
+                    android:checked="false"
+                    android:text="Chuyển khoản"
+                    android:buttonTint="#388E3C"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="7dp"
+            android:padding="8dp">
+
+            <TextView style="@style/LabelStyle"
+                android:text="Hỗ trợ"
+                android:textColor="#1976D2"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chk_truyenhinh"
+                style="@style/LabelStyle"
+                android:text="Truyền hình"
+                android:buttonTint="#F57C00"
+                android:textColor="#212121" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="7dp"
+            android:padding="8dp">
+
+            <TextView style="@style/LabelStyle" />
+
+            <CheckBox
+                android:id="@+id/chk_camera"
+                style="@style/LabelStyle"
+                android:text="Camera"
+                android:buttonTint="#F57C00"
+                android:textColor="#212121" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_thuchien"
+            style="@style/ButtonStyle"
+            android:onClick="DangKy"
+            android:text="Đăng ký"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="12dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_dong"
+            style="@style/ButtonStyle"
+            android:onClick="DongActivity"
+            android:text="Đóng"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>
